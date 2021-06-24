@@ -1,10 +1,11 @@
 trigger:
   - '*'
   
-variables:
+  variables:
     buildConfiguration: 'Release'
-  
-stages:
+    dotnetSdkVersion: '3.1.300'
+    
+  stages:
   - stage: 'Build'
     displayName: 'Build the web application'
     jobs:
